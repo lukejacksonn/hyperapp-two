@@ -1,2 +1,2 @@
-module.exports = (m,a,p) =>
-  `<counter->m.counter.count</counter->`
+module.exports = ({m,a,p}) =>
+  `<counter->m.count</counter->`
