@@ -60,6 +60,7 @@
     "uglifycss": "0.0.25"
   },
   "dependencies": {
-    "hyperapp": "0.4.0"
+    "hyperapp": "0.4.0",
+    "hyperapp-unite": "^1.0.1"
   }
 }
