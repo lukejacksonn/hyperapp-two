@@ -1,11 +1,9 @@
 import { uniteRoutes } from 'hyperapp-unite'
 
 import Home from './_home'
-import Counter from './_counter'
-import Todos from './_todos'
+import Lost from './_lost'
 
 module.exports = uniteRoutes({
   '': Home,
-  Counter,
-  Todos,
+  Lost,
 })
