@@ -1,11 +1,11 @@
-const { uniteRoutes } = require('../helpers')
+import { uniteRoutes } from '../helpers'
 
-const Index = require('../view')
-const Counter = require('./counter')
-const Todos = require('./todos')
+import Home from './_home'
+import Counter from './_counter'
+import Todos from './_todos'
 
 module.exports = uniteRoutes({
-  '': Index,
+  '': Home,
   Counter,
   Todos,
 })
