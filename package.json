@@ -43,7 +43,7 @@
     "minify": "npm run uglifyjs && npm run uglifycss",
     "uglifyjs": "uglifyjs --screw-ie8 -c -m -o public/index.js -- public/index.js",
     "uglifycss": "echo `uglifycss public/index.css` > public/index.css",
-    "dev": "npm run index && npm-watch"
+    "start": "npm run index && npm-watch"
   },
   "author": "Luke Jackson <lukejacksonn@gmail.com",
   "license": "MIT",
