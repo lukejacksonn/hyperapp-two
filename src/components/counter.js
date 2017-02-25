@@ -1,4 +1,4 @@
-const { h } = require('hyperapp')
+import { h } from 'hyperapp'
 module.exports = ({m,a}) =>
   <counter->
     <button onClick={e => a.decCounter()}>DEC</button>

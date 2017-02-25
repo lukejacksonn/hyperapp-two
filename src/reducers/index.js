@@ -1,7 +1,7 @@
-const { uniteActions } = require('../helpers')
+import { uniteActions } from '../helpers'
 
-const counter = require('./counter')
-const todos = require('./todos')
+import counter from './_counter'
+import todos from './_todos'
 
 module.exports = uniteActions({
   counter,
