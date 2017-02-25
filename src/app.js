@@ -1,12 +1,11 @@
-const { h, app, router } = require('hyperapp')
-const root = document.querySelector('main')
-
+import { h, app, router } from 'hyperapp'
 import effects from './effects'
 import subscriptions from './subscriptions'
 import update from './reducers'
 import model from './models'
-import view from './pages'
+import view from './views'
 
+const root = document.querySelector('main')
 const state = {
   router,
   effects,
@@ -17,5 +16,5 @@ const state = {
   root,
 }
 
-console.log(state);
-app(state);
+console.log(state)
+app(state)
