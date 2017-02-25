@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  display: block;
+  margin: 0;
+}
+
+head,
+script,
+style {
+  display: none;
+}
+
+body {
+  background: #212121;
+  color: rgba(255,255,255,0.8);
+}

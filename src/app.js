@@ -1,17 +1,17 @@
 const { h, app, router } = require('hyperapp')
 
 const effects = require('./effects')
-const subscriptions = require('./subs')
-const reducers = require('./reducers')
+const subscriptions = require('./subscriptions')
+const update = require('./reducers')
 const model = require('./models')
-const view = require('./views')
+const view = require('./pages')
 const root = document.querySelector('main')
 
 const state = {
   router,
   effects,
   subscriptions,
-  reducers,
+  update,
   model,
   view,
   root,

@@ -35,9 +35,9 @@
     }
   },
   "scripts": {
-    "index": "copyfiles -f src/index.html public",
-    "script": "browserify -t [ babelify ] src/core/app.js > public/index.js",
-    "style": "node-sass -q src/index.css -o public",
+    "index": "copyfiles -f src/document/index.html public",
+    "script": "browserify -t [ babelify ] src/app.js > public/index.js",
+    "style": "node-sass -q src/document/index.css -o public",
     "build": "npm run index && npm run script && npm run style && npm run minify",
     "serve": "http-server-spa public",
     "minify": "npm run uglifyjs && npm run uglifycss",
@@ -60,6 +60,6 @@
     "uglifycss": "0.0.25"
   },
   "dependencies": {
-    "hyperapp": "^0.5.0"
+    "hyperapp": "0.4.0"
   }
 }

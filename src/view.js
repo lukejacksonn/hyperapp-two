@@ -1,11 +1,10 @@
 const { h } = require('hyperapp')
 
-const Counter = require('./parts/counter/view')
-const Todos = require('./parts/todos/view')
+const Counter = require('./components/counter')
+const Todos = require('./components/todos')
 
-module.exports = (m,a,p) =>
-  <app->
-    <button onClick={e => alert('YOYO')}>CLICK</button>
-    <Counter m={m.counter} a={a} p={p} />
-    <Todos m={m.todos} a={a} p={p} />
-  </app->
+module.exports = (m,a) =>
+  <view->
+    <Counter m={m.counter} a={a} />
+    <Todos m={m.todos} />
+  </view->

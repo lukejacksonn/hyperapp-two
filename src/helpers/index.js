@@ -16,7 +16,7 @@ var uniteActions = (actions) =>
     return Object.assign({}, acc, nsa);
   }, {})
 
-var uniteViews = (views) =>
+var uniteRoutes = (views) =>
   Object.keys(views).reduce((acc, key) => {
     acc['/'+decapitalize(key)] = views[key]
     return acc;
@@ -24,5 +24,5 @@ var uniteViews = (views) =>
 
 module.exports = {
   uniteActions,
-  uniteViews,
+  uniteRoutes,
 }

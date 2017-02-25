@@ -1,6 +1,6 @@
 module.exports = {
   list: [
     { text: 'Make coffee' },
-    { text: 'Have a beer' }
+    { text: 'Have a beer' },
   ],
 }
