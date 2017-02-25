@@ -1,4 +1,9 @@
-# hyperapp-unite
->Experimenting as how to best structure hyperapp projects with numerous components
+# hyperapp-two
+>A multi-page and multi-component boilerplate hyperapp project
 
+## Usage
 
+```
+git clone git@github.com:lukejacksonn/hyperapp-two.git
+cd hyperapp-two && npm i && npm start
+```
