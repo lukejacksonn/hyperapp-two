@@ -1,3 +1,3 @@
 const { h } = require('hyperapp')
-module.exports = ({m,a,p}) =>
+module.exports = ({m}) =>
   <todos->{m.list.map(x => x.text)}</todos->

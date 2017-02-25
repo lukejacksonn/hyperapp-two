@@ -1,5 +1,5 @@
 const { h } = require('hyperapp')
-module.exports = ({m,a,p}) =>
+module.exports = ({m,a}) =>
   <counter->
     <button onClick={e => a.decCounter()}>DEC</button>
     <count->{m.count}</count->
