@@ -1,4 +1,4 @@
-import { uniteActions } from '../helpers'
+import { uniteActions } from 'hyperapp-unite'
 
 import counter from './_counter'
 import todos from './_todos'
