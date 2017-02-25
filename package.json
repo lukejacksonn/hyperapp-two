@@ -34,6 +34,12 @@
       "quiet": true
     }
   },
+  "babel": {
+    "presets": ["es2015"],
+    "plugins": [
+      [ "transform-react-jsx", { "pragma": "h" } ]
+    ]
+  },
   "scripts": {
     "index": "copyfiles -f src/document/index.html public",
     "script": "browserify -t [ babelify ] src/app.js > public/index.js",
