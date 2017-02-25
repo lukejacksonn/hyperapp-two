@@ -5,6 +5,7 @@ const subscriptions = require('./subs')
 const reducers = require('./reducers')
 const model = require('./models')
 const view = require('./views')
+const root = document.querySelector('main')
 
 const state = {
   router,
@@ -13,8 +14,8 @@ const state = {
   reducers,
   model,
   view,
+  root,
 }
 
 console.log(state);
-
-// app(state);
+app(state);

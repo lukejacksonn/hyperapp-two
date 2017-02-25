@@ -6,7 +6,7 @@ var decapitalize = (string) =>
 
 var namespace = (obj, prefix) =>
   Object.keys(obj).reduce((acc, key) => {
-    acc[prefix+capitalize(key)] = obj[key];
+    acc[key+capitalize(prefix)] = obj[key];
     return acc;
   }, {});
 
