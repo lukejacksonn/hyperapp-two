@@ -1,7 +1,5 @@
-import counter from './_counter'
-import todos from './_todos'
+import document from './_document'
 
 module.exports = [
-  ...counter,
-  ...todos,
+  ...document,
 ]
