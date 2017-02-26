@@ -41,6 +41,7 @@
     ]
   },
   "scripts": {
+    "make": "run(){ cp make/$1.js src/$1s/_$2.js; }; run",
     "index": "copyfiles -f src/document/index.html dist",
     "script": "browserify -t [ babelify ] src/app.js > dist/index.js",
     "style": "node-sass -q src/document/index.css -o dist",
