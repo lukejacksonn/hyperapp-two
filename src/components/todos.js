@@ -1,3 +1,6 @@
 import { h } from 'hyperapp'
-module.exports = ({m}) =>
-  <todos->{m.list.map(x => x.text)}</todos->
+import Todo from './todo'
+export default ({m,a}) =>
+  <todos->
+    {m.list.map(x => <Todo m={x} a={a} />)}
+  </todos->

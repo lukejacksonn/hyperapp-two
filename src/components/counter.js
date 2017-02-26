@@ -1,7 +1,7 @@
 import { h } from 'hyperapp'
-module.exports = ({m,a}) =>
+export default ({m,a}) =>
   <counter->
-    <button onClick={e => a.decCounter()}>DEC</button>
+    <button onclick={e => a.decCounter()}>DEC</button>
     <count->{m.count}</count->
-    <button onClick={e => a.incCounter()}>INC</button>
+    <button onclick={e => a.incCounter()}>INC</button>
   </counter->
