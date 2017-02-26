@@ -6,7 +6,12 @@ import model from './models'
 import view from './views'
 
 const root = document.querySelector('main')
-const state = {
+const hooks = {
+  onAction: (name, data) => console.log('Action:', name, data),
+  onUpdate: (last, model) => console.log('Update:', model),
+}
+
+const config = {
   router,
   effects,
   subscriptions,
@@ -14,7 +19,8 @@ const state = {
   model,
   view,
   root,
+  hooks
 }
 
-console.log(state)
-app(state)
+console.log('Config:', config)
+app(config)
