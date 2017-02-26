@@ -6,5 +6,5 @@ import Todos from '../components/todos'
 module.exports = (m,a) =>
   <view->
     <Counter m={m.counter} a={a} />
-    <Todos m={m.todos} />
+    <Todos m={m.todos} a={a} />
   </view->
