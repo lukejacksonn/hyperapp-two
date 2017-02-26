@@ -41,14 +41,14 @@
     ]
   },
   "scripts": {
-    "index": "copyfiles -f src/document/index.html public",
-    "script": "browserify -t [ babelify ] src/app.js > public/index.js",
-    "style": "node-sass -q src/document/index.css -o public",
+    "index": "copyfiles -f src/document/index.html dist",
+    "script": "browserify -t [ babelify ] src/app.js > dist/index.js",
+    "style": "node-sass -q src/document/index.css -o dist",
     "build": "npm run index && npm run script && npm run style && npm run minify",
-    "serve": "http-server-spa public",
+    "serve": "http-server-spa dist",
     "minify": "npm run uglifyjs && npm run uglifycss",
-    "uglifyjs": "uglifyjs --screw-ie8 -c -m -o public/index.js -- public/index.js",
-    "uglifycss": "echo `uglifycss public/index.css` > public/index.css",
+    "uglifyjs": "uglifyjs --screw-ie8 -c -m -o dist/index.js -- dist/index.js",
+    "uglifycss": "echo `uglifycss dist/index.css` > dist/index.css",
     "start": "npm run index && npm-watch"
   },
   "author": "Luke Jackson <lukejacksonn@gmail.com",
