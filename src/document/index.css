@@ -3,6 +3,9 @@
 *::before {
   display: block;
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
 }
 
 head,
@@ -11,7 +14,23 @@ style {
   display: none;
 }
 
-body {
-  background: #212121;
-  color: rgba(255,255,255,0.8);
+html {
+  font-family: sans-serif;
+  font-size: calc(10px + 1vmin);
 }
+
+body {
+  background: #fff;
+  color: rgba(0,0,0,0.8);
+}
+
+button,
+input {
+  padding: .25rem .5rem;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+  outline: none;
+}
+
+button:active { outline: 1px solid rgba(0,0,0,.2); }
+input:focus { outline: 1px solid rgba(0,0,0,.2); }

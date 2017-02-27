@@ -3,4 +3,5 @@ export default ({
     { text: 'Make coffee' },
     { text: 'Cash me outside' },
   ],
+  input: '',
 })

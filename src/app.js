@@ -1,7 +1,7 @@
 import { h, app, router } from 'hyperapp'
 import effects from './effects'
 import subscriptions from './subscriptions'
-import update from './reducers'
+import reducers from './reducers'
 import model from './models'
 import view from './views'
 
@@ -15,7 +15,7 @@ const config = {
   router,
   effects,
   subscriptions,
-  update,
+  reducers,
   model,
   view,
   root,
