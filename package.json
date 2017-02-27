@@ -35,9 +35,16 @@
     }
   },
   "babel": {
-    "presets": ["es2015"],
+    "presets": [
+      "es2015"
+    ],
     "plugins": [
-      [ "transform-react-jsx", { "pragma": "h" } ]
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "h"
+        }
+      ]
     ]
   },
   "scripts": {
@@ -67,7 +74,6 @@
     "uglifycss": "0.0.25"
   },
   "dependencies": {
-    "hyperapp": "^0.6.0",
-    "hyperapp-unite": "^1.0.1"
+    "hyperapp": "^0.6.0"
   }
 }
