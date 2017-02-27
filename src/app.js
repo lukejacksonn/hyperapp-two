@@ -11,7 +11,7 @@ const hooks = {
   onUpdate: (last, model) => console.log('Update:', model),
 }
 
-const config = {
+const options = {
   router,
   effects,
   subscriptions,
@@ -22,5 +22,5 @@ const config = {
   hooks
 }
 
-console.log('Config:', config)
-app(config)
+console.log('Options:', options)
+app(options)
