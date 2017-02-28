@@ -1,14 +1,15 @@
-import i from 'immutable'
 export default ({
-  input: (m,d,p) => i.fromJS(m)
-    .setIn(['todos','input'], d)
-    .toJS(),
-  add: (m,d,p) => i.fromJS(m)
-    .updateIn(['todos','list'], xs => xs.concat(d))
-    .setIn(['todos','input'], '')
-    .toJS(),
-  remove: (m,d,p) => i.fromJS(m)
-    .updateIn(['todos','list'],
-    xs => xs.filter(x => x.get('text') !== d))
-    .toJS(),
+  input: (m,d,p) => ({
+  todos: { ...m.todos,
+    input: d,
+  }}),
+  add: (m,d,p) =>  ({
+  todos: { ...m.todos,
+    list: m.todos.list.concat(d),
+    input: '',
+  }}),
+  remove: (m,d,p) =>  ({
+  todos: { ...m.todos,
+    list: m.todos.list.filter(x => x.text !== d),
+  }}),
 })

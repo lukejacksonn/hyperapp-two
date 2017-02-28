@@ -44,7 +44,8 @@
         {
           "pragma": "h"
         }
-      ]
+      ],
+      ["transform-object-rest-spread"]
     ]
   },
   "scripts": {
@@ -62,6 +63,7 @@
   "author": "Luke Jackson <lukejacksonn@gmail.com",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.23.0",
     "babel-preset-es2015": "^6.14.0",
     "babelify": "^7.3.0",
