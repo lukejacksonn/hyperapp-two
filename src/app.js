@@ -1,25 +1,16 @@
-import { h, app, router } from 'hyperapp'
-import effects from './effects'
+import { h, app, Router } from 'hyperapp'
 import subscriptions from './subscriptions'
-import reducers from './reducers'
+import actions from './actions'
 import model from './models'
 import view from './views'
 
-const root = document.querySelector('main')
-const hooks = {
-  onAction: (name, data) => console.log('Action:', name, data),
-  onUpdate: (last, model) => console.log('Update:', model),
-}
-
 const options = {
-  router,
-  effects,
-  subscriptions,
-  reducers,
   model,
   view,
-  root,
-  hooks
+  actions,
+  subscriptions,
+  root: document.querySelector('main'),
+  plugins: [Router],
 }
 
 console.log('Options:', options)
