@@ -50,9 +50,9 @@
   },
   "scripts": {
     "make": "run(){ cp make/$1.js src/$1s/_$2.js; }; run",
-    "index": "copyfiles -f src/document/index.html dist",
+    "index": "copyfiles -f src/index.html dist",
     "script": "browserify -t [ babelify ] src/app.js > dist/index.js",
-    "style": "node-sass -q src/document/index.css -o dist",
+    "style": "node-sass -q src/index.css -o dist",
     "build": "npm run index && npm run script && npm run style && npm run minify",
     "serve": "http-server-spa dist",
     "minify": "npm run uglifyjs && npm run uglifycss",
