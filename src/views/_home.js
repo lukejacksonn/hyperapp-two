@@ -1,7 +1,7 @@
 import { h } from 'hyperapp'
 
-import Counter from '../components/counter'
-import Todos from '../components/todos'
+import {view as Counter} from '../components/counter'
+import {view as Todos} from '../components/todos'
 
 module.exports = (m,a) =>
   <view->

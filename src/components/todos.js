@@ -1,6 +1,28 @@
 import { h } from 'hyperapp'
 import Todo from './todo'
-export default ({m,a}) =>
+
+export const model = ({
+  list: [],
+  input: '',
+})
+
+export const actions = ({
+  input: (m,d,a) => ({
+    todos: { ...m.todos,
+      input: d,
+    }}),
+  add: (m,d,a) =>  ({
+    todos: { ...m.todos,
+      list: m.todos.list.concat(d),
+      input: '',
+    }}),
+  remove: (m,d,a) =>  ({
+    todos: { ...m.todos,
+      list: m.todos.list.filter(x => x.text !== d),
+    }}),
+})
+
+export const view = ({m,a}) =>
   <todos->
     <form onsubmit={e => e.preventDefault() || a.todos.add({text: m.input})}>
       <input
