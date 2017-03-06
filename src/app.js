@@ -2,7 +2,7 @@ import { h, app, Router } from 'hyperapp'
 import subscriptions from './subscriptions'
 import actions from './actions'
 import model from './models'
-import view from './views'
+import view from './routes'
 
 const options = {
   model,

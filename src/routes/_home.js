@@ -1,10 +1,10 @@
 import { h } from 'hyperapp'
 
-import Counter from '../components/counter'
-import Todos from '../components/todos'
+import Counter from '../views/counter'
+import Todos from '../views/todos'
 
 module.exports = (m,a) =>
-  <view->
+  <home->
     <Counter m={m.counter} a={a} />
     <Todos m={m.todos} a={a} />
-  </view->
+  </home->

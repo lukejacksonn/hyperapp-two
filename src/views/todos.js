@@ -8,7 +8,7 @@ export default ({m,a}) =>
         oninput={e => a.todos.input(e.target.value)}
         value={m.input}
       />
-      <button disabled={m.input.length > 0 ? false : true}>+Todo</button>
+      <button disabled={m.input.length === 0}>+Todo</button>
     </form>
     <ul>{m.list.map(x => <Todo m={x} a={a} />)}</ul>
   </todos->
