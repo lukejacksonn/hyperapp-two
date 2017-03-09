@@ -8,6 +8,10 @@
   font-size: 1rem;
 }
 
+body *+* {
+  margin-top: .5rem;
+}
+
 head,
 script,
 style {
@@ -16,7 +20,7 @@ style {
 
 html {
   font-family: sans-serif;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(14px + 2vmin);
 }
 
 body {
